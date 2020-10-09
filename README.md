@@ -3,7 +3,7 @@
 
 ## Implementation
 
-Log into Exchange online powershell console. then run both scripts entierly (Note: As they were pieced together after running there may be some modifigation or stripping of comments to run in the console.)
+Log into Exchange online powershell console. then run both scripts entirely (Note: As they were pieced together after running there may be some modifigation or stripping of comments to run in the console.)
 
 Once the roles are created you can use these commands to check the actual permissions applied:
 
