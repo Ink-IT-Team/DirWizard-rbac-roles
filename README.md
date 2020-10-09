@@ -24,7 +24,8 @@ You should now be able to log into that restricted user and will only have acces
 
 ## Permissions applied
 
-```get-managementroleentry "UnitySyncGALContacts\*"
+```
+get-managementroleentry "UnitySyncGALContacts\*"
 
 Name                           Role                      Parameters
 ----                           ----                      ----------
@@ -62,4 +63,5 @@ Get-MailUser                   View-OnlyUnitySyncGALC... {Anr, ErrorAction, Erro
 Get-Mailbox                    View-OnlyUnitySyncGALC... {Anr, Archive, Async, ErrorAction...}
 Get-DistributionGroupMember    View-OnlyUnitySyncGALC... {Credential, ErrorAction, ErrorVariable, Identity...}
 Get-DistributionGroup          View-OnlyUnitySyncGALC... {Anr, Async, Credential, ErrorAction...}
-Get-User                       View-OnlyUnitySyncGALC... {Anr, ErrorAction, ErrorVariable, Filter...}```
+Get-User                       View-OnlyUnitySyncGALC... {Anr, ErrorAction, ErrorVariable, Filter...}
+```
