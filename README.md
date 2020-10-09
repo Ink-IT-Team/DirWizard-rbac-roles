@@ -21,3 +21,47 @@ Note: you should review these to remove any other roles brought over from the pa
 * Add the desired user to the members field.
 
 You should now be able to log into that restricted user and will only have access to the restricted commandlets.
+
+## Permissions applied
+
+```
+get-managementroleentry "UnitySyncGALContacts\*"
+
+Name                           Role                      Parameters
+----                           ----                      ----------
+Get-MailUser                   UnitySyncGALContacts      {Anr, ErrorAction, ErrorVariable, Filter...}
+Get-Contact                    UnitySyncGALContacts      {Anr, ErrorAction, ErrorVariable, Filter...}
+Get-MailContact                UnitySyncGALContacts      {Anr, ErrorAction, ErrorVariable, Filter...}
+Set-Contact                    UnitySyncGALContacts      {AssistantName, City, Company, Confirm...}
+Set-MailContact                UnitySyncGALContacts      {AcceptMessagesOnlyFrom, AcceptMessagesOnlyFromDLMembers, A...
+Set-MailboxLocation            UnitySyncGALContacts      {WhatIf}
+Get-Recipient                  UnitySyncGALContacts      {Anr, AuthenticationType, BookmarkDisplayName, Capabilities...
+Update-Recipient               UnitySyncGALContacts      {Confirm, Credential, ErrorAction, ErrorVariable...}
+Get-SenderPermission           UnitySyncGALContacts      {Recipients, Sender}
+
+
+get-managementroleentry "UnitySyncGALContactscreate\*"
+
+Name                           Role                      Parameters
+----                           ----                      ----------
+Get-MailContact                UnitySyncGALContactsCr... {Anr, ErrorAction, ErrorVariable, Filter...}
+New-MailContact                UnitySyncGALContactsCr... {Alias, Confirm, DisplayName, ErrorAction...}
+Remove-MailContact             UnitySyncGALContactsCr... {Confirm, ErrorAction, ErrorVariable, Identity...}
+Add-MailboxLocation            UnitySyncGALContactsCr... {WhatIf}
+Get-SenderPermission           UnitySyncGALContactsCr... {Recipients, Sender}
+Get-Place                      UnitySyncGALContactsCr... {ErrorAction, ErrorVariable, Identity, ResultSize...}
+Set-Place                      UnitySyncGALContactsCr... {AudioDeviceName, Building, Capacity, City...}
+
+
+get-managementroleentry "view-onlyUnitySyncGALContacts\*"
+
+Name                           Role                      Parameters
+----                           ----                      ----------
+Get-Contact                    View-OnlyUnitySyncGALC... {Anr, ErrorAction, ErrorVariable, Filter...}
+Get-MailContact                View-OnlyUnitySyncGALC... {Anr, ErrorAction, ErrorVariable, Filter...}
+Get-MailUser                   View-OnlyUnitySyncGALC... {Anr, ErrorAction, ErrorVariable, Filter...}
+Get-Mailbox                    View-OnlyUnitySyncGALC... {Anr, Archive, Async, ErrorAction...}
+Get-DistributionGroupMember    View-OnlyUnitySyncGALC... {Credential, ErrorAction, ErrorVariable, Identity...}
+Get-DistributionGroup          View-OnlyUnitySyncGALC... {Anr, Async, Credential, ErrorAction...}
+Get-User                       View-OnlyUnitySyncGALC... {Anr, ErrorAction, ErrorVariable, Filter...}
+```
