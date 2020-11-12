@@ -131,7 +131,6 @@ Remove-ManagementRoleEntry View-OnlyUnitySyncGALContacts\Get-SweepRule -Confirm:
 Remove-ManagementRoleEntry View-OnlyUnitySyncGALContacts\Get-MailboxUserConfiguration -Confirm:$false
 Remove-ManagementRoleEntry View-OnlyUnitySyncGALContacts\Get-ReportExecutionInstance -Confirm:$false
 Remove-ManagementRoleEntry View-OnlyUnitySyncGALContacts\Get-Recipient -Confirm:$false
-Remove-ManagementRoleEntry View-OnlyUnitySyncGALContacts\Get-UnifiedGroup -Confirm:$false
 Remove-ManagementRoleEntry View-OnlyUnitySyncGALContacts\Get-AdvancedThreatProtectionDocumentReport -Confirm:$false
 Remove-ManagementRoleEntry View-OnlyUnitySyncGALContacts\Get-AdvancedThreatProtectionDocumentDetail -Confirm:$false
 Remove-ManagementRoleEntry View-OnlyUnitySyncGALContacts\Remove-ExoJob -Confirm:$false
