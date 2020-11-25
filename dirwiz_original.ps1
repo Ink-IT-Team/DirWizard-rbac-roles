@@ -123,7 +123,6 @@ remove-ManagementRoleEntry UnitySyncGALContacts\Set-Mailbox -Confirm:$false
 remove-ManagementRoleEntry UnitySyncGALContacts\remove-SyncRequest -Confirm:$false
 remove-ManagementRoleEntry UnitySyncGALContacts\Get-MailboxLocation -Confirm:$false
 remove-ManagementRoleEntry UnitySyncGALContacts\Set-User -Confirm:$false
-remove-ManagementRoleEntry UnitySyncGALContacts\Get-UnifiedGroupLinks -Confirm:$false
 remove-ManagementRoleEntry UnitySyncGALContactsCreate\Disable-JournalArchiving -Confirm:$false
 remove-ManagementRoleEntry UnitySyncGALContactsCreate\Get-ActiveSyncMailboxPolicy -Confirm:$false
 remove-ManagementRoleEntry UnitySyncGALContactsCreate\Get-AddressBookPolicy -Confirm:$false
